@@ -1,13 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware} from 'redux';
+import { Provider } from "react-redux";
 
 import Posts from "./components/Posts";
 import PostForm from "./components/Postform";
 
-const store= createStore( () => [], {}, applyMiddleware() );
+import store from "./store";
 
 function App() {
   return (
